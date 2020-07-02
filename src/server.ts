@@ -13,7 +13,7 @@ import { RSA_NO_PADDING } from "constants";
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
 
-  // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
+  // IMPLEMENT A RESTFUL ENDPOINT
   // GET /filteredimage?image_url={{URL}}
   // endpoint to filter an image from a public url.
   // IT SHOULD
@@ -53,7 +53,7 @@ import { RSA_NO_PADDING } from "constants";
     }
   });
 
-  //! END @TODO1
+  //! END
 
   // Root Endpoint
   // Displays a simple message to the user
