@@ -39,7 +39,7 @@ import { RSA_NO_PADDING } from "constants";
     try {
       let imgPath = await filterImageFromURL(image_url);
 
-      res.sendFile(imgPath, {}, function (err) {
+      res.status(200).sendFile(imgPath, {}, function (err) {
         if (err) {
           console.log(err);
           res.status(500).send("Internal server error");
